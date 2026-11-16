@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>¡Gracias! | BAKIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .thanks-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .thanks-card {
+        width: 100%;
+        max-width: 560px;
+        padding: 55px 35px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        text-align: center;
+      }
+
+      .thanks-icon {
+        width: 76px;
+        height: 76px;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 28px;
+        background: rgba(255, 130, 63, 0.1);
+        border: 1px solid rgba(255, 130, 63, 0.3);
+        border-radius: 50%;
+        color: var(--primary);
+        font-size: 38px;
+      }
+
+      .thanks-card h1 {
+        font-size: clamp(28px, 5vw, 38px);
+        margin-bottom: 18px;
+        line-height: 1.2;
+      }
+
+      .thanks-card h1 span {
+        color: var(--primary);
+      }
+
+      .thanks-card p {
+        color: var(--muted);
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+      }
+
+      .thanks-footer {
+        font-size: 12px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="thanks-container">
+      <section class="thanks-card">
+        <div class="thanks-icon" aria-hidden="true">✓</div>
+
+        <h1>¡Muchas <span>gracias!</span></h1>
+
+        <p>
+          Recibimos tu relevamiento técnico de BAKIA y Off Road. La información
+          nos ayudará a evaluar las necesidades de ambas empresas y preparar una
+          propuesta de trabajo organizada por etapas.
+        </p>
+
+        <div class="thanks-footer">
+          BAKIA & Off Road 4x4 Experience
+          <br />
+          Relevamiento técnico · Santiago Cossu
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
