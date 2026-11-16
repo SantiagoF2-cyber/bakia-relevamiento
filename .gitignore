@@ -1,0 +1,33 @@
+
+# Dependencias
+node_modules/
+vendor/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+
+# Carpetas locales
+temp/
+tmp/
+backup/
+backups/
