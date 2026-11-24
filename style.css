@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+  isolation: isolate;
 }
 
 button,
@@ -155,7 +157,7 @@ button {
 }
 
 .hero > p {
-  max-width: 650px;
+  max-width: 680px;
   margin: auto;
   color: var(--muted);
   font-size: 16px;
@@ -179,6 +181,72 @@ button {
 }
 
 .hero-info span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* NUEVO PLANTEAMIENTO */
+
+.strategy-card {
+  padding: 30px;
+  margin-bottom: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 130, 63, 0.08),
+    var(--surface) 65%
+  );
+  border: 1px solid rgba(255, 130, 63, 0.25);
+  border-radius: var(--radius);
+}
+
+.strategy-card .eyebrow {
+  margin-bottom: 10px;
+}
+
+.strategy-card h2 {
+  font-size: 23px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.strategy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.strategy-item {
+  padding: 22px;
+  background: #0b111a;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.strategy-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.strategy-item strong {
+  display: block;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.strategy-item p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.strategy-note {
+  margin-top: 18px;
   font-size: 12px;
   color: var(--muted);
 }
@@ -350,7 +418,7 @@ select {
 
 input::placeholder,
 textarea::placeholder {
-  color: #69788b;
+  color: #8190a3;
 }
 
 input:hover,
@@ -393,7 +461,11 @@ select option {
   color: white;
 }
 
-/* AVISO */
+.honeypot {
+  display: none !important;
+}
+
+/* AVISOS */
 
 .notice {
   background: rgba(255, 130, 63, 0.06);
@@ -442,6 +514,7 @@ select option {
   font-size: 14px;
   font-weight: 800;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -475,6 +548,12 @@ select option {
   background: var(--surface-hover);
 }
 
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
 .form-message {
   margin-top: 15px;
   font-size: 13px;
@@ -493,6 +572,63 @@ select option {
   align-items: center;
   gap: 20px;
   padding: 35px 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* PÁGINA DE GRACIAS */
+
+.thanks-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 25px;
+}
+
+.thanks-card {
+  width: 100%;
+  max-width: 580px;
+  padding: 50px 35px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.thanks-icon {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  color: var(--primary);
+  background: rgba(255, 130, 63, 0.1);
+  border: 1px solid rgba(255, 130, 63, 0.3);
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.thanks-card h1 {
+  font-size: clamp(28px, 5vw, 38px);
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.thanks-card p {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.thanks-card .btn-primary {
+  max-width: 300px;
+  margin: 30px auto 0;
+}
+
+.thanks-footer {
+  margin-top: 30px;
   color: var(--muted);
   font-size: 12px;
 }
@@ -534,6 +670,18 @@ select option {
     font-size: 20px;
   }
 
+  .strategy-card {
+    padding: 24px 20px;
+  }
+
+  .strategy-card h2 {
+    font-size: 20px;
+  }
+
+  .strategy-item {
+    padding: 18px;
+  }
+
   .form-section {
     padding: 24px 20px;
   }
@@ -553,6 +701,12 @@ select option {
 
   .question label {
     font-size: 14px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px;
   }
 
   .progress-card {
@@ -592,6 +746,14 @@ select option {
     font-size: 10px;
   }
 
+  .strategy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-item strong {
+    font-size: 28px;
+  }
+
   .progress-header {
     align-items: flex-start;
   }
@@ -603,6 +765,10 @@ select option {
   .btn-primary,
   .btn-secondary {
     width: 100%;
+  }
+
+  .thanks-card {
+    padding: 35px 22px;
   }
 }
 
