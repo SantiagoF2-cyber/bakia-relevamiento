@@ -2,578 +2,470 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <meta
       name="description"
-      content="Formulario de relevamiento técnico para la separación digital de BAKIA y Off Road 4x4 Experience."
+      content="Relevamiento actualizado de la separación digital de BAKIA y Off Road."
     />
-
-    <meta name="robots" content="noindex, nofollow" />
-
-    <title>Relevamiento Técnico | BAKIA & Off Road</title>
-
+    <title>Relevamiento V2 | BAKIA &amp; Off Road</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-
   <body>
-    <div class="background-glow glow-one"></div>
-    <div class="background-glow glow-two"></div>
-
     <main class="container">
-      <!-- ENCABEZADO -->
-
       <header class="header">
         <div class="brand">
           <div class="brand-icon">B</div>
-
           <div>
-            <span class="brand-name">BAKIA</span>
-            <span class="brand-subtitle">Relevamiento digital</span>
+            <span class="brand-name">BAKIA</span
+            ><span class="brand-subtitle">Relevamiento digital</span>
           </div>
         </div>
-
-        <div class="header-badge">Diagnóstico inicial</div>
+        <div class="header-badge">Relevamiento V2</div>
       </header>
-
-      <!-- HERO -->
-
       <section class="hero">
-        <div class="eyebrow">PLANIFICACIÓN DE INFRAESTRUCTURA</div>
-
-        <h1>
-          Construyamos la próxima
-          <span>etapa digital.</span>
-        </h1>
-
+        <div class="eyebrow">ACTUALIZACIÓN DEL PROYECTO</div>
+        <h1>Una nueva etapa, <span>un nuevo enfoque.</span></h1>
         <p>
-          Este formulario nos permitirá conocer la infraestructura actual de Off
-          Road y las necesidades de BAKIA para planificar la separación de ambas
-          empresas.
+          Según lo conversado, evaluaremos conservar la infraestructura actual
+          para BAKIA y trasladar a Off Road únicamente los recursos que le
+          correspondan.
         </p>
-
         <div class="hero-info">
-          <div>
-            <strong>18</strong>
-            <span>Preguntas</span>
-          </div>
-
-          <div>
-            <strong>5</strong>
-            <span>Secciones</span>
-          </div>
-
-          <div>
-            <strong>10-15 min</strong>
-            <span>Tiempo estimado</span>
-          </div>
+          <div><strong>18</strong><span>Preguntas</span></div>
+          <div><strong>6</strong><span>Secciones</span></div>
+          <div><strong>10-15 min</strong><span>Tiempo estimado</span></div>
         </div>
       </section>
-
-      <!-- FORMULARIO -->
-
       <form
         id="relevamientoForm"
         action="https://formsubmit.co/santiagocossu870@gmail.com"
         method="POST"
       >
-        <!-- CONFIGURACIÓN FORMSUBMIT -->
-
         <input
           type="hidden"
           name="_subject"
-          value="Nuevo relevamiento técnico - BAKIA / Off Road"
-        />
-
-        <input type="hidden" name="_captcha" value="false" />
-
-        <input type="hidden" name="_template" value="table" />
-
-        <!-- REDIRECCIÓN A PÁGINA DE GRACIAS -->
-        <input
+          value="Nuevo relevamiento V2 - BAKIA / Off Road"
+        /><input type="hidden" name="_captcha" value="false" /><input
+          type="hidden"
+          name="_template"
+          value="table"
+        /><input
           type="hidden"
           name="_next"
-          value="https://santiagof2-cyber.github.io/bakia-relevamiento/gracias.html"
+          value="https://santiagof2-cyber.github.io/bakia-relevamiento-v2/gracias.html"
+        /><input
+          type="text"
+          name="_honey"
+          class="honeypot"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
         />
-
-        <input type="hidden" name="_honey" value="" id="honeypot" />
-
-        <!-- PROGRESO -->
-
         <div class="progress-card">
           <div class="progress-header">
             <div>
-              <span class="progress-label"> Progreso del relevamiento </span>
-
-              <p>Podés completar el formulario a tu ritmo.</p>
+              <strong>Progreso del relevamiento</strong>
+              <p>
+                Las respuestas se guardan en este navegador. Podés dejar
+                preguntas pendientes.
+              </p>
             </div>
-
             <strong id="progressText">0 de 18</strong>
           </div>
-
           <div
             class="progress-track"
+            id="progressBar"
             role="progressbar"
             aria-label="Progreso del formulario"
             aria-valuemin="0"
             aria-valuemax="18"
             aria-valuenow="0"
-            id="progressBar"
           >
             <div id="progressFill"></div>
           </div>
         </div>
-
-        <!-- DATOS PERSONALES -->
-
         <section class="form-section">
           <div class="section-heading">
             <span class="section-number">00</span>
-
             <div>
               <h2>Datos de contacto</h2>
-              <p>Primero, contanos quién completa el formulario.</p>
+              <p>Contanos quién completa el formulario.</p>
             </div>
           </div>
-
           <div class="field">
-            <label for="nombre">
-              Nombre y apellido
-              <span class="required">*</span>
-            </label>
-
-            <input
-              type="text"
+            <label for="nombre">Nombre y apellido *</label
+            ><input
               id="nombre"
               name="Nombre y apellido"
-              placeholder="Ej: Sofía Pérez"
               autocomplete="name"
-              maxlength="120"
               required
+              maxlength="120"
             />
           </div>
-
           <div class="field">
-            <label for="email">
-              Correo electrónico
-              <span class="optional">(opcional)</span>
-            </label>
-
-            <input
+            <label for="email">Correo electrónico (opcional)</label
+            ><input
               type="email"
               id="email"
               name="Correo de contacto"
-              placeholder="nombre@empresa.com"
               autocomplete="email"
             />
           </div>
         </section>
-
-        <!-- SECCIÓN 1 -->
-
         <section class="form-section">
           <div class="section-heading">
             <span class="section-number">01</span>
-
             <div>
-              <h2>Google Workspace y correos</h2>
-              <p>Configuración de dominios, cuentas y migración de emails.</p>
+              <h2>Google Workspace y dominios</h2>
+              <p>Confirmemos qué organización conservará cada empresa.</p>
             </div>
           </div>
-
           <div class="question">
-            <label for="q1">
-              <span class="question-number">01.</span>
-              ¿Ya compraron el dominio bakia.com.ar? ¿Quién administra sus DNS?
-            </label>
-
-            <textarea
+            <label for="q1"
+              ><span class="question-number">01.</span> ¿La organización actual
+              de Google Workspace de Off Road debe quedar para BAKIA?</label
+            ><select
               id="q1"
-              name="01 - Dominio BAKIA y administrador DNS"
-              placeholder="Ej: Sí, está registrado en NIC Argentina y los DNS se administran en..."
-              rows="3"
-            ></textarea>
-          </div>
-
-          <div class="question">
-            <label for="q2">
-              <span class="question-number">02.</span>
-              ¿Cuántas cuentas de correo necesitan crear en BAKIA?
-            </label>
-
-            <select id="q2" name="02 - Cantidad de cuentas BAKIA">
+              name="01 - ¿La organización actual de Google Workspace de Off Road debe quedar para BAKIA?"
+            >
               <option value="">Seleccionar una opción</option>
-              <option>1 cuenta</option>
-              <option>2 a 5 cuentas</option>
-              <option>6 a 10 cuentas</option>
-              <option>Más de 10 cuentas</option>
+              <option>
+                Sí, BAKIA conserva la organización actual y Off Road tendrá una
+                nueva
+              </option>
+              <option>No, queremos otra distribución</option>
+              <option>Necesitamos asesoramiento</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="q2"
+              ><span class="question-number">02.</span> ¿La idea es utilizar
+              bakia.com.ar para BAKIA y conservar offroadarg.com para la nueva
+              organización de Off Road?</label
+            ><select
+              id="q2"
+              name="02 - ¿La idea es utilizar bakia.com.ar para BAKIA y conservar offroadarg.com para la nueva organización de Off Road?"
+            >
+              <option value="">Seleccionar una opción</option>
+              <option>Sí</option>
+              <option>No</option>
               <option>Aún no definido</option>
             </select>
           </div>
-
           <div class="question">
-            <label for="q3">
-              <span class="question-number">03.</span>
-              ¿Qué cuentas actuales de Off Road quieren migrar y cuáles deben
-              conservar?
-            </label>
-
-            <textarea
+            <label for="q3"
+              ><span class="question-number">03.</span> ¿Quién tiene acceso
+              administrativo a Google Workspace y a los DNS de ambos
+              dominios?</label
+            ><textarea
               id="q3"
-              name="03 - Cuentas a migrar y conservar"
-              placeholder="Ej: Migrar marketing@... y conservar travesias@..."
-              rows="4"
+              name="03 - ¿Quién tiene acceso administrativo a Google Workspace y a los DNS de ambos dominios?"
+              rows="3"
+              placeholder="Indicá responsables y proveedores, sin compartir contraseñas."
             ></textarea>
-          </div>
-
-          <div class="question">
-            <label for="q4">
-              <span class="question-number">04.</span>
-              ¿Necesitan trasladar todo el historial de correos y contactos?
-            </label>
-
-            <select id="q4" name="04 - Migracion historial de correos">
-              <option value="">Seleccionar una opción</option>
-              <option>Sí, todo el historial</option>
-              <option>Solo determinados correos y contactos</option>
-              <option>No es necesario</option>
-              <option>Aún no definido</option>
-            </select>
           </div>
         </section>
-
-        <!-- SECCIÓN 2 -->
-
         <section class="form-section">
           <div class="section-heading">
             <span class="section-number">02</span>
-
             <div>
-              <h2>Google Drive y Photos</h2>
-              <p>Organización y transferencia de documentos y multimedia.</p>
+              <h2>Correos electrónicos</h2>
+              <p>
+                Definamos las cuentas y los historiales que realmente deben
+                trasladarse.
+              </p>
             </div>
           </div>
-
           <div class="question">
-            <label for="q5">
-              <span class="question-number">05.</span>
-              ¿Cuántas cuentas tienen archivos y fotografías para migrar?
-            </label>
-
-            <select id="q5" name="05 - Cuentas con archivos a migrar">
+            <label for="q4"
+              ><span class="question-number">04.</span> ¿Comercial, marketing,
+              ventas y comunicación deben permanecer en la organización actual y
+              pasar a utilizar @bakia.com.ar?</label
+            ><select
+              id="q4"
+              name="04 - ¿Comercial, marketing, ventas y comunicación deben permanecer en la organización actual y pasar a utilizar @bakia.com.ar?"
+            >
               <option value="">Seleccionar una opción</option>
-              <option>1 cuenta</option>
-              <option>2 a 5 cuentas</option>
-              <option>6 a 10 cuentas</option>
-              <option>Más de 10 cuentas</option>
-              <option>No sabemos todavía</option>
+              <option>Sí, las cuatro cuentas</option>
+              <option>Solo algunas cuentas</option>
+              <option>Otra distribución</option>
+              <option>Aún no definido</option>
             </select>
           </div>
-
           <div class="question">
-            <label for="q6">
-              <span class="question-number">06.</span>
-              ¿Qué archivos deben quedar en Off Road y cuáles pasar a BAKIA?
-            </label>
-
-            <textarea
-              id="q6"
-              name="06 - Distribucion de archivos"
-              placeholder="Describí las carpetas, documentos o materiales..."
-              rows="4"
-            ></textarea>
-          </div>
-
-          <div class="question">
-            <label for="q7">
-              <span class="question-number">07.</span>
-              ¿Hay carpetas o documentos que necesiten conservar ambas empresas?
-            </label>
-
-            <textarea
-              id="q7"
-              name="07 - Archivos compartidos"
-              placeholder="Ej: Material audiovisual, documentación comercial..."
+            <label for="q5"
+              ><span class="question-number">05.</span>
+              ¿Travesias@offroadarg.com y gleiro@offroadarg.com serán las únicas
+              cuentas que pasarán al nuevo Workspace de Off Road?</label
+            ><textarea
+              id="q5"
+              name="05 - ¿Travesias@offroadarg.com y gleiro@offroadarg.com serán las únicas cuentas que pasarán al nuevo Workspace de Off Road?"
               rows="3"
+              placeholder="Confirmá ambas cuentas e indicá si hay otras."
             ></textarea>
           </div>
-
           <div class="question">
-            <label for="q8">
-              <span class="question-number">08.</span>
-              ¿Tienen una idea del volumen de información almacenada?
-            </label>
-
-            <select id="q8" name="08 - Volumen de informacion">
+            <label for="q6"
+              ><span class="question-number">06.</span> ¿Qué historial de
+              correos y contactos debe trasladarse a Off Road?</label
+            ><select
+              id="q6"
+              name="06 - ¿Qué historial de correos y contactos debe trasladarse a Off Road?"
+            >
               <option value="">Seleccionar una opción</option>
-              <option>Menos de 10 GB</option>
-              <option>Entre 10 y 50 GB</option>
-              <option>Entre 50 y 100 GB</option>
-              <option>Más de 100 GB</option>
-              <option>No sabemos todavía</option>
+              <option>Todo el historial de las cuentas de Off Road</option>
+              <option>Solo determinados mensajes y contactos</option>
+              <option>No es necesario trasladar historial</option>
+              <option>Aún no definido</option>
             </select>
+          </div>
+          <div class="question">
+            <label for="q7"
+              ><span class="question-number">07.</span> ¿Necesitan mantener
+              temporalmente las direcciones antiguas, reenvíos o respuestas
+              automáticas durante el cambio?</label
+            ><textarea
+              id="q7"
+              name="07 - ¿Necesitan mantener temporalmente las direcciones antiguas, reenvíos o respuestas automáticas durante el cambio?"
+              rows="3"
+              placeholder="Indicá qué direcciones deben seguir recibiendo mensajes y durante cuánto tiempo."
+            ></textarea>
           </div>
         </section>
-
-        <!-- SECCIÓN 3 -->
-
         <section class="form-section">
           <div class="section-heading">
             <span class="section-number">03</span>
-
             <div>
-              <h2>Google Business Profile</h2>
-              <p>Presencia comercial, perfiles y reseñas.</p>
+              <h2>Google Drive y Photos</h2>
+              <p>
+                Identifiquemos el material que se separará de la infraestructura
+                actual.
+              </p>
             </div>
           </div>
-
-          <div class="notice">
-            <strong>Información importante</strong>
-            <p>
-              La posibilidad de conservar o trasladar reseñas depende de las
-              políticas de Google y de la relación entre ambas empresas. Esta
-              sección nos ayudará a evaluar las alternativas disponibles.
-            </p>
-          </div>
-
           <div class="question">
-            <label for="q9">
-              <span class="question-number">09.</span>
-              ¿BAKIA tendrá el mismo domicilio y actividad comercial que Off
-              Road?
-            </label>
-
-            <textarea
-              id="q9"
-              name="09 - Domicilio y actividad comercial"
-              placeholder="Indicá si compartirán ubicación y qué actividad realizará cada empresa..."
+            <label for="q8"
+              ><span class="question-number">08.</span> ¿Cuáles son las carpetas
+              que deben trasladarse a Off Road?</label
+            ><textarea
+              id="q8"
+              name="08 - ¿Cuáles son las carpetas que deben trasladarse a Off Road?"
               rows="3"
+              placeholder="Indicá nombres, ubicación y cuenta propietaria si los conocen."
             ></textarea>
           </div>
-
           <div class="question">
-            <label for="q10">
-              <span class="question-number">10.</span>
-              ¿La intención es conservar las reseñas de Off Road en BAKIA y
-              mantener ambos perfiles activos?
-            </label>
-
-            <select id="q10" name="10 - Objetivo Google Business">
+            <label for="q9"
+              ><span class="question-number">09.</span> ¿Qué tamaño aproximado
+              tienen esas carpetas y archivos?</label
+            ><textarea
+              id="q9"
+              name="09 - ¿Qué tamaño aproximado tienen esas carpetas y archivos?"
+              rows="3"
+              placeholder="Si no conocen el tamaño, pueden indicarlo. El 15% mencionado es solo una referencia."
+            ></textarea>
+          </div>
+          <div class="question">
+            <label for="q10"
+              ><span class="question-number">10.</span> ¿Off Road necesita
+              trasladar fotografías, videos o álbumes de Google Photos además de
+              Drive?</label
+            ><select
+              id="q10"
+              name="10 - ¿Off Road necesita trasladar fotografías, videos o álbumes de Google Photos además de Drive?"
+            >
               <option value="">Seleccionar una opción</option>
-              <option>
-                Sí, queremos ambos perfiles y conservar las reseñas en BAKIA
-              </option>
-              <option>Queremos evaluar las alternativas posibles</option>
-              <option>Solo necesitamos crear un perfil nuevo para BAKIA</option>
-              <option>Aún no definido</option>
+              <option>Sí</option>
+              <option>No</option>
+              <option>Aún no sabemos</option>
             </select>
           </div>
+          <div class="question">
+            <label for="q11"
+              ><span class="question-number">11.</span> ¿Hay archivos, carpetas,
+              enlaces o permisos que ambas empresas deban conservar?</label
+            ><textarea
+              id="q11"
+              name="11 - ¿Hay archivos, carpetas, enlaces o permisos que ambas empresas deban conservar?"
+              rows="3"
+              placeholder="Indicá cuáles, o si no necesitan compartir recursos."
+            ></textarea>
+          </div>
         </section>
-
-        <!-- SECCIÓN 4 -->
-
         <section class="form-section">
           <div class="section-heading">
             <span class="section-number">04</span>
-
             <div>
-              <h2>Páginas web en Wix</h2>
-              <p>Actualización de Off Road y desarrollo de BAKIA.</p>
+              <h2>Google Business Profile</h2>
+              <p>Revisemos la continuidad de los perfiles comerciales.</p>
             </div>
           </div>
-
-          <div class="question">
-            <label for="q11">
-              <span class="question-number">11.</span>
-              ¿Qué secciones quieren eliminar de la web actual de Off Road?
-            </label>
-
-            <textarea
-              id="q11"
-              name="11 - Secciones a eliminar Off Road"
-              placeholder="Ej: Tienda, reservas, determinadas páginas..."
-              rows="4"
-            ></textarea>
+          <div class="notice">
+            <strong>Importante</strong>
+            <p>
+              Conservar las reseñas depende de las políticas de Google y de la
+              continuidad real del negocio. No se garantiza mediante un cambio
+              de nombre.
+            </p>
           </div>
-
           <div class="question">
-            <label for="q12">
-              <span class="question-number">12.</span>
-              ¿BAKIA tendrá una identidad visual y contenidos completamente
-              nuevos?
-            </label>
-
-            <select id="q12" name="12 - Identidad visual BAKIA">
+            <label for="q12"
+              ><span class="question-number">12.</span> ¿Quieren que el perfil
+              actual de Google Maps de Off Road pase a identificarse como BAKIA
+              y crear un perfil nuevo para Off Road?</label
+            ><select
+              id="q12"
+              name="12 - ¿Quieren que el perfil actual de Google Maps de Off Road pase a identificarse como BAKIA y crear un perfil nuevo para Off Road?"
+            >
               <option value="">Seleccionar una opción</option>
-              <option>Sí, identidad y contenidos nuevos</option>
-              <option>Queremos reutilizar parte de la web actual</option>
-              <option>Necesitamos asesoramiento</option>
-              <option>Aún no definido</option>
+              <option>Sí</option>
+              <option>No</option>
+              <option>Queremos evaluar alternativas</option>
             </select>
           </div>
-
           <div class="question">
-            <label for="q13">
-              <span class="question-number">13.</span>
-              ¿Qué funcionalidades necesitará la nueva web: formularios,
-              reservas, pagos u otras?
-            </label>
-
-            <textarea
+            <label for="q13"
+              ><span class="question-number">13.</span> ¿Qué actividad,
+              domicilio y nombre comercial tendrá cada empresa después de la
+              separación?</label
+            ><textarea
               id="q13"
-              name="13 - Funcionalidades web BAKIA"
-              placeholder="Ej: Formulario de contacto, WhatsApp, reservas, pagos online..."
-              rows="4"
+              name="13 - ¿Qué actividad, domicilio y nombre comercial tendrá cada empresa después de la separación?"
+              rows="3"
+              placeholder="Indicá si BAKIA continúa la actividad del negocio actual y qué servicios conservará Off Road."
             ></textarea>
-          </div>
-
-          <div class="question">
-            <label for="q14">
-              <span class="question-number">14.</span>
-              ¿Ya tienen definidos los textos, imágenes y diseños?
-            </label>
-
-            <select id="q14" name="14 - Estado de contenidos y diseno">
-              <option value="">Seleccionar una opción</option>
-              <option>Sí, tenemos todo preparado</option>
-              <option>Tenemos parte del material</option>
-              <option>Todavía debemos prepararlo</option>
-              <option>Necesitamos asesoramiento</option>
-            </select>
           </div>
         </section>
-
-        <!-- SECCIÓN 5 -->
-
         <section class="form-section">
           <div class="section-heading">
             <span class="section-number">05</span>
-
             <div>
-              <h2>Separación y prioridades</h2>
-              <p>Responsables, planificación y tiempos de implementación.</p>
+              <h2>Páginas web en Wix</h2>
+              <p>
+                Confirmemos si también cambia el planteamiento de los sitios.
+              </p>
             </div>
           </div>
-
           <div class="question">
-            <label for="q15">
-              <span class="question-number">15.</span>
-              ¿Quiénes administrarán Off Road y quiénes BAKIA después de la
-              separación?
-            </label>
-
-            <textarea
-              id="q15"
-              name="15 - Responsables de cada empresa"
-              placeholder="Indicá los responsables o equipos de cada empresa..."
-              rows="3"
-            ></textarea>
-          </div>
-
-          <div class="question">
-            <label for="q16">
-              <span class="question-number">16.</span>
-              ¿Qué servicios necesitan separar primero?
-            </label>
-
-            <textarea
-              id="q16"
-              name="16 - Prioridades de separacion"
-              placeholder="Ej: Primero correos, después Drive y finalmente las webs..."
-              rows="3"
-            ></textarea>
-          </div>
-
-          <div class="question">
-            <label for="q17">
-              <span class="question-number">17.</span>
-              ¿Tienen alguna fecha límite para que ambas empresas funcionen
-              independientemente?
-            </label>
-
-            <input
-              type="text"
-              id="q17"
-              name="17 - Fecha limite"
-              placeholder="Ej: Enero 2027 / No tenemos fecha definida"
-            />
-          </div>
-
-          <div class="question">
-            <label for="q18">
-              <span class="question-number">18.</span>
-              ¿Quieren presupuestar y ejecutar cada servicio por separado?
-            </label>
-
-            <select id="q18" name="18 - Modalidad de contratacion">
+            <label for="q14"
+              ><span class="question-number">14.</span> ¿Qué empresa debería
+              conservar el sitio Wix actual, su plan y sus
+              funcionalidades?</label
+            ><select
+              id="q14"
+              name="14 - ¿Qué empresa debería conservar el sitio Wix actual, su plan y sus funcionalidades?"
+            >
               <option value="">Seleccionar una opción</option>
-              <option>Sí, por servicios o etapas independientes</option>
-              <option>Preferimos una propuesta integral</option>
-              <option>Queremos evaluar ambas alternativas</option>
+              <option>BAKIA</option>
+              <option>Off Road</option>
+              <option>Aún no definido</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="q15"
+              ><span class="question-number">15.</span> ¿Qué páginas, secciones
+              y funcionalidades debe tener cada sitio?</label
+            ><textarea
+              id="q15"
+              name="15 - ¿Qué páginas, secciones y funcionalidades debe tener cada sitio?"
+              rows="3"
+              placeholder="Indicá qué queda en BAKIA, qué queda en Off Road y dónde debe mantenerse Escuela 4x4."
+            ></textarea>
+          </div>
+          <div class="question">
+            <label for="q16"
+              ><span class="question-number">16.</span> ¿Se mantienen los
+              contenidos y diseños que habían indicado tener preparados?</label
+            ><select
+              id="q16"
+              name="16 - ¿Se mantienen los contenidos y diseños que habían indicado tener preparados?"
+            >
+              <option value="">Seleccionar una opción</option>
+              <option>Sí</option>
+              <option>No, habrá cambios</option>
+              <option>Aún no definido</option>
             </select>
           </div>
         </section>
-
-        <!-- COMENTARIOS -->
-
         <section class="form-section">
           <div class="section-heading">
-            <span class="section-number">+</span>
-
+            <span class="section-number">06</span>
             <div>
-              <h2>Comentarios adicionales</h2>
-              <p>¿Hay algo más que debamos tener en cuenta?</p>
+              <h2>Instagram y planificación</h2>
+              <p>Validemos los últimos detalles antes de cotizar.</p>
             </div>
           </div>
-
-          <div class="field">
-            <textarea
-              id="comentarios"
-              name="Comentarios adicionales"
-              placeholder="Podés agregar cualquier información que consideres importante..."
-              rows="5"
+          <div class="question">
+            <label for="q17"
+              ><span class="question-number">17.</span> ¿Quieren conservar el
+              Instagram actual para BAKIA y crear uno nuevo para Off
+              Road?</label
+            ><select
+              id="q17"
+              name="17 - ¿Quieren conservar el Instagram actual para BAKIA y crear uno nuevo para Off Road?"
+            >
+              <option value="">Seleccionar una opción</option>
+              <option>Sí</option>
+              <option>No</option>
+              <option>Lo gestionaremos por separado</option>
+              <option>Aún no definido</option>
+            </select>
+          </div>
+          <div class="question">
+            <label for="q18"
+              ><span class="question-number">18.</span> ¿Se mantienen las
+              prioridades (correos, Drive y web), la fecha objetivo de enero de
+              2027 y la contratación por etapas?</label
+            ><textarea
+              id="q18"
+              name="18 - ¿Se mantienen las prioridades (correos, Drive y web), la fecha objetivo de enero de 2027 y la contratación por etapas?"
+              rows="3"
+              placeholder="Confirmá o indicá qué cambió, incluyendo responsables autorizados para aprobar cambios."
             ></textarea>
           </div>
         </section>
-
-        <!-- ACCIONES -->
-
+        <section class="form-section">
+          <div class="section-heading">
+            <span class="section-number">+</span>
+            <div>
+              <h2>Comentarios adicionales</h2>
+              <p>¿Hay algo más que debamos considerar?</p>
+            </div>
+          </div>
+          <label for="comentarios">Comentarios (opcional)</label
+          ><textarea
+            id="comentarios"
+            name="Comentarios adicionales"
+            rows="4"
+          ></textarea>
+        </section>
         <div class="form-actions">
           <p class="privacy-text">
-            Las respuestas serán enviadas al responsable técnico para evaluar el
-            alcance del proyecto y preparar una propuesta de trabajo.
+            Las respuestas se enviarán mediante FormSubmit al responsable
+            técnico para evaluar el proyecto. No incluyas contraseñas ni
+            información confidencial. Este formulario no implica contratación.
           </p>
-
           <div class="action-buttons">
             <button type="button" id="resetBtn" class="btn-secondary">
-              Reiniciar
-            </button>
-
-            <button type="submit" id="submitBtn" class="btn-primary">
-              Enviar relevamiento
-              <span aria-hidden="true">→</span>
+              Reiniciar</button
+            ><button type="submit" id="submitBtn" class="btn-primary">
+              Enviar relevamiento →
             </button>
           </div>
-
           <p id="formMessage" class="form-message" role="status"></p>
         </div>
       </form>
-
-      <!-- FOOTER -->
-
       <footer class="footer">
-        <p>Relevamiento técnico · BAKIA & Off Road 4x4 Experience</p>
-
-        <span> Preparado por Santiago Cossu </span>
+        <p>Relevamiento técnico · BAKIA &amp; Off Road 4x4 Experience</p>
+        <span>Preparado por Santiago Cossu</span>
       </footer>
     </main>
   </body>
